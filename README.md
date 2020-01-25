@@ -9,7 +9,7 @@ composer install
 vendor/bin/kahlan --coverage=1
 ```
 
-The error is happen because using `https://github.com/laminas/laminas-zendframework-bridge`
+The error is happen because using `laminas/laminas-zendframework-bridge` in `require` in composer.json
 
 It will output error:
 
