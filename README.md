@@ -9,11 +9,13 @@ composer install
 vendor/bin/kahlan --coverage=1
 ```
 
+The error is happen because using `https://github.com/laminas/laminas-zendframework-bridge`
+
 It will output error:
 
 ```bash
-vendor/bin/kahlan --coverage=1                                      
-Cannot load Xdebug - it was already loaded
+$ vendor/bin/kahlan --coverage=1                                      
+
 PHP Fatal error:  Uncaught Error: Cannot use object of type Closure as array in /Users/samsonasik/www/kahlan-issue-339/vendor/kahlan/kahlan/src/Jit/ClassLoader.php:114
 Stack trace:
 #0 /Users/samsonasik/www/kahlan-issue-339/vendor/kahlan/kahlan/src/Reporter/Coverage/Collector.php(121): Kahlan\Jit\ClassLoader::instance()
